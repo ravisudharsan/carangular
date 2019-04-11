@@ -1,0 +1,17 @@
+<h1> Welcome to Car Project </h1>
+<div>
+  <table border="1">
+    <tr>
+      <th>Id</th>
+      <th>Car Name</th>
+      <th>Car Model</th>
+    </tr>
+    <tr *ngFor="let car of cars">
+        <td>{{car.id}}</td>
+        <td>{{car.name}}</td>
+        <td>{{car.model}}</td>
+    </tr>
+  </table>
+  <br>
+<button type="button" ng-click="show()" value="Add">Add New</button>
+</div>
